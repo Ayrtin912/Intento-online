@@ -1,16 +1,49 @@
-# Godot 4+ specific ignores
-.godot/
-.nomedia
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Godot-specific ignores
+# Archivos de Godot
 .import/
 export.cfg
-export_credentials.cfg
+export_presets.cfg
 
-# Imported translations (automatically generated from CSV files)
-*.translation
+# Cache y temporales
+*.import
+*.tmp
+*.log
+*.bak
 
-# Mono-specific ignores
+# Configuración local del editor
+.editor_settings-*
+.cache/
+.godot/
+
+# Carpetas ocultas o personales
+.idea/
+.vscode/
+*.code-workspace
+
+# Archivos de build (si usas C#)
 .mono/
-data_*/
-mono_crash.*.json
+.data_*/
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.so
+*.a
+*.lib
+*.obj
+*.o
+
+# Archivos de exportación
+bin/
+build/
+dist/
+exports/
+
+# Si usas Godot con GDScript y no C#, puedes ignorar estos:
+# project.sln
+# .vs/
+# .nuget/
