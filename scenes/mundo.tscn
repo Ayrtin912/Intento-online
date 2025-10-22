@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dj0aksrxnycxj"]
 
-[ext_resource type="Texture2D" uid="uid://bkpbqkfkko08w" path="res://templategrid_albedo.png" id="1_0vka0"]
-[ext_resource type="Script" uid="uid://cx6wn0nudcx7f" path="res://scenes/main.gd" id="1_yi5ae"]
+[ext_resource type="Script" uid="uid://cx6wn0nudcx7f" path="res://scripts/main.gd" id="1_yi5ae"]
+[ext_resource type="Texture2D" uid="uid://clkavpnvquxrn" path="res://Don Bianchi kkkkkkkkkkkk.jpg" id="2_vwj67"]
 [ext_resource type="PackedScene" uid="uid://nxoh01hxy0wn" path="res://scenes/player.tscn" id="2_yi5ae"]
 [ext_resource type="PackedScene" uid="uid://dv4y5bjwcnppu" path="res://scenes/auto.tscn" id="3_vwj67"]
 
@@ -20,7 +20,7 @@ glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fw4w5"]
 albedo_color = Color(0.450648, 0.450648, 0.450648, 0)
-albedo_texture = ExtResource("1_0vka0")
+albedo_texture = ExtResource("2_vwj67")
 uv1_triplanar = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_lgngo"]
