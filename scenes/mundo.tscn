@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dj0aksrxnycxj"]
+[gd_scene load_steps=12 format=3 uid="uid://dj0aksrxnycxj"]
 
-[ext_resource type="Script" uid="uid://cx6wn0nudcx7f" path="res://scripts/main.gd" id="1_yi5ae"]
 [ext_resource type="Texture2D" uid="uid://clkavpnvquxrn" path="res://Don Bianchi kkkkkkkkkkkk.jpg" id="2_vwj67"]
 [ext_resource type="PackedScene" uid="uid://nxoh01hxy0wn" path="res://scenes/player.tscn" id="2_yi5ae"]
+[ext_resource type="Script" uid="uid://dn6bv36pshsrs" path="res://scripts/basic_char.gd" id="3_jaeu2"]
 [ext_resource type="PackedScene" uid="uid://dv4y5bjwcnppu" path="res://scenes/auto.tscn" id="3_vwj67"]
+[ext_resource type="Script" uid="uid://bt52k7pi3ya1w" path="res://scripts/hover_test.gd" id="5_75jji"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6ba58"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -31,7 +32,6 @@ size = Vector2(300, 300)
 size = Vector3(300, 1, 300)
 
 [node name="Mundo" type="Node3D"]
-script = ExtResource("1_yi5ae")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_fw4w5")
@@ -50,7 +50,9 @@ mesh = SubResource("PlaneMesh_lgngo")
 shape = SubResource("BoxShape3D_fw4w5")
 
 [node name="player" parent="." instance=ExtResource("2_yi5ae")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 43.2168, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7637234, 0)
+script = ExtResource("3_jaeu2")
 
 [node name="auto" parent="." instance=ExtResource("3_vwj67")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.3947, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.26004, 0, 0.15447903)
+script = ExtResource("5_75jji")
