@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dv4y5bjwcnppu"]
 
-[ext_resource type="Script" uid="uid://c8nb5vcdfbb1v" path="res://scripts/auto.gd" id="1_t25hp"]
+[ext_resource type="Script" uid="uid://bt52k7pi3ya1w" path="res://scripts/hover_test.gd" id="1_7pkad"]
 [ext_resource type="Material" uid="uid://dbk3t7xm8s576" path="res://materials/bianchiyyomaterial.tres" id="2_7pkad"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_otwa2"]
@@ -11,12 +11,10 @@ material = ExtResource("2_7pkad")
 size = Vector3(3, 1, 1)
 
 [node name="auto" type="RigidBody3D"]
-script = ExtResource("1_t25hp")
+script = ExtResource("1_7pkad")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 1)
 shape = SubResource("BoxShape3D_otwa2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 1)
 mesh = SubResource("BoxMesh_aou4a")
